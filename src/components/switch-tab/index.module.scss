@@ -1,0 +1,49 @@
+@import '../../assets/css-config/css-config';
+
+.switch-btn {
+  background: $fog-grey;
+  border-radius: 25px;
+  border: 1px solid $silver-line;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 25px;
+    background: $theme-color;
+    border: 1px solid $them-border;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+  }
+
+  span {
+    flex: 1;
+    text-align: center;
+    padding: 15px 30px;
+    z-index: 1;
+    color: $white;
+    transition: 0.3s ease-in-out;
+  }
+
+  span:last-child {
+    color: $slate-grey;
+  }
+
+  &.toggle {
+    &::after {
+      transform: translateX(100%);
+    }
+
+    span:last-child {
+      color: $white;
+    }
+
+    span:first-child {
+      color: $slate-grey;
+    }
+  }
+}

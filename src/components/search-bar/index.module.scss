@@ -1,0 +1,17 @@
+@import '../../assets/css-config/css-config';
+
+.search-bar {
+  input {
+    border-radius: 5px;
+    background: $grey-bg;
+    padding: 10px 32px 10px 40px;
+    width: 100%;
+  }
+
+  i {
+    right: 12px;
+    top: 10px;
+    font-size: 1.8rem;
+    color: $medium-grey;
+  }
+}

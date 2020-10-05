@@ -1,0 +1,10 @@
+@import '../../assets/css-config/css-config';
+
+.text-area {
+  @include dimensions(100%, 103px);
+
+  border-radius: 5px;
+  background: $grey-bg;
+  padding: 13px 15px;
+  line-height: 20px;
+}

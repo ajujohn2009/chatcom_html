@@ -1,0 +1,12 @@
+@import '../../assets/css-config/css-config';
+
+.input-wrap {
+  input {
+    width: 100%;
+    color: $slate-grey;
+    background: $grey-bg;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+}

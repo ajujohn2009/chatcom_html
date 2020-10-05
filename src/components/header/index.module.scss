@@ -1,0 +1,24 @@
+@import '../../assets/css-config/css-config';
+
+.header {
+  padding: 10px 0;
+
+  .menu-icon {
+    font-size: 2rem;
+  }
+
+  .logo {
+    @include dimensions(105px, 60px, 105px);
+
+    border: 1px solid $silver-line;
+    margin: 0 40px 0 20px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .search-wrap {
+    flex: 1;
+  }
+}

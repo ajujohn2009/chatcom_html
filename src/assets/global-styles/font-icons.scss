@@ -1,0 +1,89 @@
+// Custom fonts css
+@font-face {
+  font-family: 'custom-icon';
+  src:  url('../fonts/custom-icon.eot?vymb02');
+  src:  url('../fonts/custom-icon.eot?vymb02#iefix') format('embedded-opentype'),
+  url('../fonts/custom-icon.woff2?vymb02') format('woff2'),
+  url('../fonts/custom-icon.ttf?vymb02') format('truetype'),
+  url('../fonts/custom-icon.woff?vymb02') format('woff'),
+  url('../fonts/custom-icon.svg?vymb02#-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'custom-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-updates::before {
+  content: '\e91f';
+}
+
+.icon-filter::before {
+  content: '\e92a';
+}
+
+.icon-display::before {
+  content: '\e906';
+}
+
+.icon-arrow-right::before {
+  content: '\e90f';
+}
+
+.icon-back-arrow::before {
+  content: '\e910';
+}
+
+.icon-check::before {
+  content: '\e911';
+}
+
+.icon-cross::before {
+  content: '\e913';
+}
+
+.icon-down-arrow::before {
+  content: '\e914';
+}
+
+.icon-exclamation::before {
+  content: '\e915';
+}
+
+.icon-menu::before {
+  content: '\e919';
+}
+
+.icon-minus::before {
+  content: '\e91a';
+}
+
+.icon-order::before {
+  content: '\e91b';
+}
+
+.icon-plus::before {
+  content: '\e91d';
+}
+
+.icon-search::before {
+  content: '\e926';
+}
+
+.icon-error::before {
+  content: '\e927';
+}

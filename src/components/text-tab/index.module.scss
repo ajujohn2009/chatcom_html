@@ -1,0 +1,15 @@
+@import '../../assets/css-config/css-config';
+
+.text-tab {
+  @include link(false, $black, false, false, 20px);
+
+  margin-right: 20px;
+  white-space: nowrap;
+  transition: color 0.2s ease-in;
+  letter-spacing: -0.28px;
+
+  &.active {
+    font-weight: bold;
+    color: $theme-color;
+  }
+}

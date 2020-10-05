@@ -1,0 +1,16 @@
+@import '../../assets/css-config/css-config';
+
+.quick-actions {
+  font-size: 2.2rem;
+  color: $medium-grey;
+
+  i {
+    margin-left: 25px;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+
+    &.active {
+      color: $theme-color;
+    }
+  }
+}

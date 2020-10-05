@@ -1,0 +1,52 @@
+//------------Theme colors-------------//
+
+//primary
+$theme-color: #f50f29;
+$them-border: #cd0a20;
+
+//-------------Communication colors-----------//
+
+//positive
+$success: #1f9d4a;
+$success-shade1: #51d996;
+$success-shade2: #7de3b0;
+$success-shade3: #a8eccb;
+$success-shade4: #d4f6e5;
+$success-shade5: #e9faf1;
+
+//alert
+$alert: #ffad00;
+$alert-shade1: #ffbd33;
+$alert-shade2: #ffce66;
+$alert-shade3: #ffde99;
+$alert-shade4: #ffefcc;
+$alert-shade5: #fff6e5;
+
+//warnings
+$warning: #f50d28;
+$warning-shade1: #ff797d;
+$warning-shade2: #ff9b9e;
+$warning-shade3: #fccad0;
+$warning-shade4: #ffd7db;
+
+//------------------Neutral colors-------------------//
+$black: #2e2e2e;
+$slate-grey: #343434;
+$polo-grey: #636363;
+$medium-grey: #868686;
+$light-grey: #9e9e9e;
+$silver-line: #ededed;
+$fog-grey: #e3e3e3;
+$grey-bg : #f5f5f5;
+$white: #fff;
+
+//------------------rgba color variables-------------------//
+$transparent-black: rgba(0, 0, 0, .6);
+$transparent-white: rgba(255, 255, 255, .5);
+$transparent-black-focus: rgba(0, 60, 100, .6);
+$box-shadow: rgba(0, 0, 0, .1) 0 4px 10px , rgba(0, 0, 0, .1) 0 4px 10px 0;
+$box-shadow-toastr: rgba(2, 0, 108, 0.5) 0 4px 10px, rgba(0, 0, 0, 0.1) 0 4px 10px 0;
+
+// global values
+$header-height: 55px;
+$menu-bar-width: 250px;

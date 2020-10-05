@@ -1,0 +1,81 @@
+// sass-lint:disable-all
+@mixin font($size: false, $color: false, $weight: false, $lh: false, $style: false, $textDecoration: false) {
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+  @if $style { font-style: $style; }
+  @if $textDecoration { text-decoration: $textDecoration; }
+}
+
+// mixin to add ellipsis
+@mixin  ellipsis ($maxWidth: false){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @if $maxWidth { max-width: $maxWidth; }
+}
+
+// Mixin for multiline ellipsis support on web
+// this will provide support only for -webkit- browser for till date
+@mixin  ellipsis-multi ($maxLine, $maxHeight: false){
+  display: -webkit-box;
+  -webkit-line-clamp: $maxLine;
+  -webkit-box-orient: vertical;
+  overflow: hidden; // fallback for non supported browsers
+  white-space: normal;
+
+  @if $maxHeight { // fallback for non supported browsers if required
+    max-height: $maxHeight;
+  }
+}
+
+// mixin for width, height, max-width & max-height
+@mixin  dimensions($width: false, $height: false, $minWidth: false, $minHeight: false, $maxWidth: false, $maxHeight: false) {
+  @if $width { width: $width; }
+  @if $height { height: $height; }
+  @if $minWidth { min-width: $minWidth; }
+  @if $minHeight { min-height: $minHeight; }
+  @if $maxWidth { max-width: $maxWidth; }
+  @if $maxHeight { max-height: $maxHeight; }
+}
+
+// mixin to create a link
+@mixin link($size: false, $color: false, $weight: false, $decoration: false, $lh: false) {
+  cursor: pointer;
+
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $decoration { text-decoration: $decoration; }
+  @if $lh { line-height: $lh; }
+}
+
+//hack for firefox to support display flex properties
+@mixin flex-support {
+  min-height: 0;
+}
+
+//skeleton loading animation effect
+@mixin loading-style {
+  overflow: hidden;
+  // Animation
+  animation: wave 1s infinite ease-in-out;
+  background: linear-gradient(to right, lighten($silver-line, 5%) 2%, $silver-line 18%, lighten($silver-line, 5%) 33%);
+  background-size: 800px; // Animation Area
+}
+
+@keyframes wave {
+  0% { background-position: -430px 0; }
+  100% { background-position: 430px 0; }
+}
+
+//mixin for bullet circel
+@mixin bullet-style($width, $height) {
+  content: '';
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+  background: $polo-grey;
+}

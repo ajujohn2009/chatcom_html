@@ -1,0 +1,18 @@
+@import '../../assets/css-config/css-config';
+
+.value-btn {
+  background: $black;
+  color: $white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 110px;
+  padding: 0 10px;
+
+  i {
+    color: $light-grey;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 12px 5px;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../assets/css-config/css-config';
+
+.deal-box {
+  @include dimensions(false, false, 131px, false, 131px);
+
+  margin-right: 25px;
+  padding-bottom: 5px;
+  cursor: pointer;
+
+  .dish-box {
+    @include dimensions(100%, 129px);
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    .dish-img {
+      @include dimensions(100%, 101px);
+
+      background: $fog-grey;
+
+      img {
+        @include dimensions(100%, 100%);
+      }
+    }
+
+    .price-box {
+      background: $theme-color;
+      padding: 6px;
+      text-align: center;
+      height: 28px;
+      border-top: 2px solid $white;
+      color: $white;
+    }
+  }
+
+  .dish-name {
+    line-height: 22px;
+    margin-top: 13px;
+    color: $slate-grey;
+  }
+}

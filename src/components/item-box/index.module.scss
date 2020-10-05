@@ -1,0 +1,39 @@
+@import '../../assets/css-config/css-config';
+
+.item-box {
+  .img-box {
+    width: 100%;
+    padding-bottom: 100%;
+    background: $fog-grey;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .item-img {
+      @include dimensions(100%, 100%);
+
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .name-box {
+    color: $slate-grey;
+    line-height: 1.57;
+    margin-top: 13px;
+  }
+
+  .price-box {
+    margin-top: 5px;
+    font-size: 13px;
+
+    .offered-price {
+      color: $theme-color;
+    }
+
+    .real-price {
+      color: $polo-grey;
+      margin-left: 15px;
+      text-decoration: line-through;
+    }
+  }
+}

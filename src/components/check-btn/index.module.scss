@@ -1,0 +1,37 @@
+@import '../../assets/css-config/css-config';
+
+.check-wrap {
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  .check-txt {
+    margin-right: 15px;
+    color: $slate-grey;
+  }
+
+  .check-btn {
+    border: 2px solid $light-grey;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+
+    &::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: $theme-color;
+      transform: scale(0);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  input:checked ~ label .check-btn {
+    &::after {
+      transform: scale(1);
+    }
+  }
+}

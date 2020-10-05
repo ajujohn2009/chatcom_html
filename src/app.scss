@@ -1,0 +1,14 @@
+@import '../src/assets/css-config/css-config';
+
+.page-wrap {
+  @include dimensions(100%, 100%);
+
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .page-wrap {
+    max-width: 600px;
+    border-right: 1px solid $silver-line;
+  }
+}

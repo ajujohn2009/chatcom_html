@@ -1,0 +1,14 @@
+@import '../../assets/css-config/css-config';
+
+.status-bar {
+  padding: 10px 0 15px;
+
+  label {
+    color: $light-grey;
+    margin-right: 45px;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+}

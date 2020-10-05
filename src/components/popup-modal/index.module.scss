@@ -1,0 +1,69 @@
+@import '../../assets/css-config/css-config';
+
+.popup-wrap {
+  @include position(fixed, 0, 0, 0, 0, 4);
+  @include dimensions(100%, 100%);
+
+  display: block;
+
+  .overlay {
+    @include position(absolute, 0, 0);
+    @include dimensions(100%, 100%);
+
+    background: $transparent-black;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+
+  &.show {
+    display: block;
+
+    .overlay {
+      opacity: 1;
+    }
+
+    .popup {
+      top: 50px;
+    }
+  }
+}
+
+.popup {
+  @include flex(flex, false, false, false, column);
+  @include position(absolute, -102%, false, false, 50%, 1);
+  @include dimensions(false, false, 560px, false, 80%, 90%);
+
+  background: $white;
+  border-radius: 8px;
+  overflow: hidden;
+  transform: translateX(-50%);
+  transition: 500ms ease-in-out;
+
+  .popup-header {
+    @include flex(flex, center, space-between);
+
+    border-bottom: 1px solid $silver-line;
+    padding: 16px;
+
+    .popup-title {
+      @include font(1.6rem, $black-pearl, 600);
+    }
+
+    .close-btn {
+      @include link(1.4rem, $slate-grey, 600);
+    }
+  }
+
+  .popup-content {
+    flex: 1;
+    min-height: 100px;
+    overflow: auto;
+    padding: 16px;
+  }
+
+  .popup-footer {
+    border-top: 1px solid $silver-line;
+    padding: 16px;
+    text-align: right;
+  }
+}
